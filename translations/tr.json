@@ -1,0 +1,54 @@
+{
+  "app": {
+    "description": "Magento’dan müşteri ve sipariş detaylarını görüntüler.",
+    "name": "Magento",
+    "parameters": {
+      "url": {
+        "label": "Mağaza URL"
+      },
+      "access_token": {
+        "label": "Erişim belirteci"
+      },
+      "order_id_field_id": {
+        "label": "Sipariş Numarası Alan Kimliği"
+      }
+    }
+  },
+  "profile": {
+    "customer_since": "Şu Tarihten Bu Yana Müşteri",
+    "addresses": "Adresler",
+    "billing": "Faturalandırma",
+    "shipping": "Sevkiyat",
+    "order": "Sipariş",
+    "guest": "(Misafir)"
+  },
+  "global": {
+    "error": {
+      "title": "Bir hata oluştu",
+      "message": "Lütfen önceki eylemi tekrar deneyin.",
+      "server": "Talep başarısız oldu. Yapılandırmanızın doğruluğundan emin olun ve tekrar deneyin.",
+      "data": "Kayıt verileri okunamadı.",
+      "noprofile": "Müşteri mevcut değil."
+    },
+    "loading": "Kayıt verilerinin yüklenmesi bekleniyor...",
+    "requesting": "Magento’dan veriler isteniyor..."
+  },
+  "orders": {
+    "id": "SON SİPARİŞLER",
+    "status": "DURUM"
+  },
+  "order": {
+    "details": "Sipariş detayları",
+    "status": "Durum",
+    "currency": "Para Birimi",
+    "items": "Öğeler",
+    "created": "Oluşturma tarihi",
+    "updated": "Güncellendi",
+    "store": "Mağaza",
+    "total": "Toplam",
+    "error": {
+      "message": "Sipariş mevcut değil",
+      "no_address": "Adres yok."
+    }
+  }
+}

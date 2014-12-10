@@ -1,0 +1,32 @@
+<h4>{{t "order.details"}} <a target="_blank" href="{{order.admin_url}}">{{order.id}}</a><h4>
+
+<h5>{{t "order.store"}}</h5>
+<p>{{{order.store}}}</p>
+
+<h5>{{t "order.status"}}</h5>
+<p><span class="badge badge-{{order.status}}">{{order.status}}</span></p>
+
+<h5>{{t "order.currency"}}</h5>
+<p>{{order.currency}}</p>
+
+<h5>{{t "order.total"}}</h5>
+<p>{{order.total}}</p>
+
+<h5>{{t "order.created"}}</h5>
+<p>{{order.created}}</p>
+
+{{#each order.items}}
+<h5>Order Item SKU</h5>
+<p>{{this.sku}}</p>
+
+<h5>Order Item Name</h5>
+<p>{{this.name}}</p>
+
+<h5>Quantity ordered</h5>
+<p>{{this.qty_ordered}}
+{{/each}}
+
+<h5>Order updated</h5>
+<p>{{order.updated}}</p>
+
+

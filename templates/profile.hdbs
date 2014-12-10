@@ -1,0 +1,56 @@
+<div>
+
+  <h4>
+    <a href="{{admin_url}}" target="_blank">{{name}}</a>
+    {{#if guest}}
+    <span>{{t "profile.guest"}}</span>
+    {{/if}}
+  </h4>
+
+  {{#if recentOrders}}
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>{{t "orders.id"}}</th>
+        <th>{{t "orders.status"}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#recentOrders}}
+      <tr class="_tooltip" data-title="{{titles}}" data-placement="top">
+        <td><a href="{{admin_url}}" target="_blank">#{{id}}</td>
+        <td><span class="badge badge-{{status}}">{{status}}</a></td>
+      </tr>
+      {{/recentOrders}}
+    </tbody>
+  </table>
+  {{/if}}
+
+  <div class="magento-address">
+    <h5>{{t "profile.addresses"}}</h5>
+
+    <h6><a href="#" class="toggle-address">{{t "profile.billing"}}</a></h6>
+    <p class="hide">
+      {{#if addresses.billing}}
+        {{{addresses.billing}}}
+      {{else}}
+        {{t "order.error.no_address"}}
+      {{/if}}
+    </p>
+
+    <h6><a href="#" class="toggle-address">{{t "profile.shipping"}}</a></h6>
+    <p class="hide">
+      {{#if addresses.shipping}}
+        {{{addresses.shipping}}}
+      {{else}}
+        {{t "order.error.no_address"}}
+      {{/if}}
+    </p>
+  </div>
+
+  <h5>{{t "profile.customer_since"}}</h5>
+  <p>{{created}}</p>
+
+  <div class="order"></div>
+
+</div>
