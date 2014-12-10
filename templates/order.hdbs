@@ -14,6 +14,7 @@
 
 <h5>{{t "order.created"}}</h5>
 <p>{{order.created}}</p>
+<<<<<<< HEAD
 
 {{#each order.items}}
 <h5>Order Item SKU</h5>
@@ -30,3 +31,5 @@
 <p>{{order.updated}}</p>
 
 
+=======
+>>>>>>> 074064da818763f1a1c3dd29520f7d602c46ff1c
